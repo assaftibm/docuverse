@@ -9,7 +9,6 @@ from pydantic_core.core_schema import LiteralSchema
 from tqdm import tqdm
 from copy import deepcopy
 
-from triton.language.extra.cuda import num_threads
 
 from docuverse.utils import (
     open_stream,
