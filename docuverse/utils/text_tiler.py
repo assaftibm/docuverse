@@ -127,7 +127,7 @@ class TextTiler:
                 maxl = max_doc_size  # - title_len
                 psgs, inds, added_titles = \
                     self.split_text(text=text, max_length=maxl, title=title,
-                                    stride=stride, tokenizer=self.tokenizer, title_handling=title_handling,
+                                    stride=stride, title_handling=title_handling,
                                     title_in_text=title_in_text)
                 for pi, (p, index, added_title) in enumerate(zip(psgs, inds, added_titles)):
                     itm.update({
