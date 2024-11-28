@@ -375,8 +375,8 @@ class RetrievalArguments(GenericArguments):
         }
     )
 
-    query_template: DataTemplate = default_query_template
-    data_template: DataTemplate = default_data_template
+    query_template: DataTemplate = field(default_factory=lambda: default_query_template)
+    data_template: DataTemplate = field(default_factory=lambda: default_data_template)
 
     def __post_init__(self):
         # parse the query_header_template
