@@ -2,8 +2,6 @@ import json
 import os
 from typing import Optional, List, Literal
 
-from optimum.utils.runs import RunConfig, Run
-
 from docuverse.utils import read_config_file
 from docuverse.engines.retrieval.search_filter import SearchFilter
 from docuverse.utils import get_param
